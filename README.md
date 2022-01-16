@@ -3,7 +3,7 @@ Shopify Backend Developer Intern Challenge Summer 2022
 
 ## Installation
 
-1. Ensure that [Node.js](https://nodejs.org/en/download/), [Sqlite3](https://www.sqlite.org/download.html) and [Git](https://git-scm.com/downloads) are installed.
+1. Ensure that [Node.js](https://nodejs.org/en/download/) (preferrably >=v16.x LTS), [Sqlite3](https://www.sqlite.org/download.html) and [Git](https://git-scm.com/downloads) are installed.
 2. Clone the repository or [download the zip](https://github.com/nathanlytang/shopifybackend2022/archive/refs/heads/master.zip).
 ```
 git clone https://github.com/nathanlytang/shopifybackend2022
