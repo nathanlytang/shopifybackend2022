@@ -1,0 +1,14 @@
+.wrapper {
+    background-color: #FFFFFF;
+    height: 100vh;
+}
+
+.mainContent {
+    display: grid;
+    grid-row: 1;
+    grid-row: 2;
+    /* border: 2px solid red; */
+    overflow: auto;
+    /* border: 2px solid red; */
+    height: calc(100% - 15vh);
+}

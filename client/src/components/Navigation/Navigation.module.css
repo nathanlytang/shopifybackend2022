@@ -1,0 +1,46 @@
+.sidebar {
+    transition: 0.5s;
+    width: 100%;
+}
+
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.listItem {
+    display: inline;
+    margin: 10vh 5vh;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.listItem a {
+    display: inline-block;
+    margin: 5vh 10px;
+}
+
+.listItem a:hover {
+    transition: 0.1s;
+    color: black;
+}
+
+.active {
+    font-weight: 600;
+    /* background-color: rgba(255, 255, 255, 0.5);
+    padding: 1vh 1vw;
+    border-radius: 5px; */
+}
+
+.active:hover a {
+    color: black;
+}
+
+.active:active {
+    pointer-events: none;
+}
