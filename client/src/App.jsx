@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
-import { NotFound, Inventory } from "./domain";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Inventory } from "./domain";
 import "./App.css";
 
 
@@ -10,10 +10,7 @@ function App() {
         <div className="App">
             <Router>
                 <Switch>
-                    <Route path="/" exact render={() => <Redirect to="/inventory" />} />
-
-                    <Route path="/inventory" exact render={() => <Inventory />} />
-                    <Route component={NotFound} />
+                    <Route path="/" exact render={() => <Inventory />} />
 
                 </Switch>
             </Router>
