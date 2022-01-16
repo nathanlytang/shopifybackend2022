@@ -20,6 +20,6 @@ app.get('*', (req: express.Request, res: express.Response) => {
 });
 
 
-console.log(`App is listening on port ${process.env.PORT || 3000}.`);
+console.log(`App is listening on port ${process.env.PORT || 9000}.`);
 
 module.exports = app;
