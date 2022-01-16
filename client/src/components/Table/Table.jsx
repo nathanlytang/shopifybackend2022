@@ -50,7 +50,7 @@ export default function DataGridFunc() {
     const handleRowAdd = React.useCallback(
         async () => {
             try {
-                await fetch('http://127.0.0.1:9000/inventory/add', {
+                await fetch(`${process.env.REACT_APP_API_URL}/inventory/add`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     mode: 'cors',
@@ -70,7 +70,7 @@ export default function DataGridFunc() {
                 const rows = apiRef.current.getSelectedRows();
                 rows.forEach((value, key) => {
 
-                    fetch('http://127.0.0.1:9000/inventory/delete', {
+                    fetch(`${process.env.REACT_APP_API_URL}/inventory/delete`, {
                         method: 'DELETE',
                         headers: { 'Content-Type': 'application/json' },
                         mode: 'cors',
@@ -91,7 +91,7 @@ export default function DataGridFunc() {
                 const model = apiRef.current.getEditRowsModel();
                 const row = { id: id, name: model[id].name.value, description: model[id].description.value, available: model[id].available.value };
 
-                await fetch('http://127.0.0.1:9000/inventory/update', {
+                await fetch(`${process.env.REACT_APP_API_URL}/inventory/update`, {
                     method: 'PUT',
                     headers: { 'Content-Type': 'application/json' },
                     mode: 'cors',
@@ -126,7 +126,7 @@ export default function DataGridFunc() {
     React.useEffect(() => {
         async function fetchData() {
             try {
-                const res = await fetch('http://127.0.0.1:9000/inventory/get', {
+                const res = await fetch(`${process.env.REACT_APP_API_URL}/inventory/get`, {
                     method: 'GET',
                     mode: 'cors',
                     credentials: 'include',
